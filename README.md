@@ -15,9 +15,9 @@ count of mask <br>
 &ensp;&ensp;&ensp;&ensp; U-net was first used for biomedical image segmentation. Its architecture can be broadly thought of as an encoder network followed by a decoder network. Unlike classification where the end result of the the deep network is the only important thing, semantic segmentation not only requires discrimination at pixel level but also a mechanism to project the discriminative features learnt at different stages of the encoder onto the pixel space. The encoder is the first half in the architecture diagram. It usually is a pre-trained classification network like VGG/ResNet where you apply convolution blocks followed by a maxpool downsampling to encode the input image into feature representations at multiple different levels. The decoder is the second half of the architecture. The goal is to semantically project the discriminative features (lower resolution) learnt by the encoder onto the pixel space (higher resolution) to get a dense classification. The decoder consists of upsampling and concatenation followed by regular convolution operations.<br>
 **If you want to know more about UNet , you can look this article** https://arxiv.org/pdf/1505.04597.pdf
 <br>
-You can look **model architecture** by model.py file. <br>
-You can look **project notebook** by brain-tumor-segmentation-vgg19-unet.ipynb <br>
-**Download and use model:** seg_model.h5 <br>
+You can look model architecture by model.py file. <br>
+You can look project notebook by brain-tumor-segmentation-vgg19-unet.ipynb <br>
+download this model ( seg_model.h5 ) and use <br>
 
 ### About Model
 **Callbacks function for fitting:**  ReduceLROnPlateau ( Reduce learning rate when a metric has stopped improving ), <br> ModelCheckpoint ( save best weigts), EarlyStopping (Stop training when a monitored metric has stopped improving)<br><br>
