@@ -16,4 +16,17 @@ count of mask <br>
 **If you want to know more about UNet , you can look this article** https://arxiv.org/pdf/1505.04597.pdf
 <br>
 You can look **model architecture** by model.py file. <br>
-You can look **project notebook** by brain-tumor-segmentation-vgg19-unet.ipynb
+You can look **project notebook** by brain-tumor-segmentation-vgg19-unet.ipynb <br>
+
+### About Model
+**Callbacks function for fitting:**  ReduceLROnPlateau ( Reduce learning rate when a metric has stopped improving ), <br> ModelCheckpoint ( save best weigts), EarlyStopping (Stop training when a monitored metric has stopped improving)<br><br>
+**epochs:** 60 <br><br>
+**loss functions:** Focal Tversky loss (https://arxiv.org/abs/1810.07842)<br><br>
+**metric:**  Tversky ( https://arxiv.org/abs/1706.05721 )<br><br>
+
+
+![loss](https://user-images.githubusercontent.com/59391291/117513611-c29fa980-af9a-11eb-869b-d672d7939939.png)<br><br>
+### a few prediction images
+![predictions](https://user-images.githubusercontent.com/59391291/117513706-fb3f8300-af9a-11eb-9faf-154a7dfc5052.png)
+
+
