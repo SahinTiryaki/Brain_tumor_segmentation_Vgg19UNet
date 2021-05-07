@@ -17,6 +17,7 @@ count of mask <br>
 <br>
 You can look **model architecture** by model.py file. <br>
 You can look **project notebook** by brain-tumor-segmentation-vgg19-unet.ipynb <br>
+**Download and use model:** seg_model.h5 <br>
 
 ### About Model
 **Callbacks function for fitting:**  ReduceLROnPlateau ( Reduce learning rate when a metric has stopped improving ), <br> ModelCheckpoint ( save best weigts), EarlyStopping (Stop training when a monitored metric has stopped improving)<br><br>
